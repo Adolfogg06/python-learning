@@ -6,7 +6,7 @@ def calcularPromedio(listaNotas):
     totalNotas = 0
     for nota in listaNotas:
         totalNotas = totalNotas + nota
-        return totalNotas / len(listaNotas)
+    return totalNotas / len(listaNotas)
 
 
 class estudiante:
