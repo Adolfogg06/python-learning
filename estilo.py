@@ -1,18 +1,15 @@
-#import os
-#import sys
+
+def calcular_promedio(lista_notas):
+    total_notas = 0
+    for nota in lista_notas:
+        total_notas = total_notas + nota
+    return total_notas / len(lista_notas)
 
 
-def calcularPromedio(listaNotas):
-    totalNotas = 0
-    for nota in listaNotas:
-        totalNotas = totalNotas + nota
-    return totalNotas / len(listaNotas)
-
-
-class estudiante:
-    def __init__(self, nombreCompleto, notas):
-        self.nombreCompleto = nombreCompleto
+class Estudiante:
+    def __init__(self, nombre_completo, notas):
+        self.nombre_completo = nombre_completo
         self.notas = notas
 
 
-print(calcularPromedio([90, 85, 77]))
+print(calcular_promedio([90, 85, 77]))
